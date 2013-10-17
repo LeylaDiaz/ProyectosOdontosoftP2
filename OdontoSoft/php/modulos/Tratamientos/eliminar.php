@@ -9,7 +9,7 @@ $alerta_mensaje = "";
 $obj_tratamiento = Tratamiento::getInstancia();
 $id_desencriptado = realUrl($_GET['id']);
 $obj_tratamiento->removeTratamientoById($id_desencriptado);
-// Objeto obtiene la alerta y el mensaje:
+// Objeto obtiene la alerta y el mensaje
 $alerta_tipo = $obj_tratamiento->getAlerta();
 $alerta_mensaje = $obj_tratamiento->getMensaje();
 ?>
