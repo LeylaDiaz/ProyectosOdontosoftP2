@@ -1,0 +1,269 @@
+@import url("reset.css");
+
+body, input {
+	font-family: Arial;
+	font-size: 15px;
+}
+
+input {
+	border: 1px solid black;
+	background-color: white;
+	padding: 3px 5px;
+	margin-left: 0px;
+}
+
+input:focus {
+	outline: none;
+	color: #696969;
+	border: 3px double #696969;
+	padding: 1px 3px;
+}
+
+textarea {
+	font-size: 15px;
+	font-family: Arial;
+	border: 1px solid black;
+	background-color: white;
+	padding: 3px 5px;
+	margin-left: 0px;
+	min-width: 385px;
+}
+
+textarea:focus {
+	outline: none;
+	color: #696969;
+	border: 3px double #696969;
+	padding: 1px 3px;
+}
+
+select {
+	font-size: 15px;
+	font-family: Arial;
+	border: 1px solid black;
+	background-color: white;
+	padding: 3px 5px;
+	margin-left: 0px;
+	min-width: 185px;
+}
+
+select:focus {
+	outline: none;
+	color: #696969;
+	border: 3px double #696969;
+	padding: 1px 3px;
+}
+
+fieldset {
+	border: 1px solid #333;
+	margin: 5px;
+	padding: 0px 10px 10px;
+	background-color: #eeeeee;
+}
+
+legend {
+	border: 1px solid black;
+	padding: 5px;
+	background-color: #cfcfcf;
+	color: #272822;
+}
+
+.legend-error {
+	background-color: #ffbaba;
+	border: 1px solid #d8000c;
+	color: #d8000c;
+}
+
+.legend-exito {
+	background-color: #dff2bf;
+	border: 1px solid #4f8a10;
+	color: #4f8a10;
+}
+
+a {
+	color: #335abb;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #2677c5;
+	text-decoration: underline;
+	border-bottom: 1px solid;
+}
+
+h1 {
+	border-bottom: 1px solid black;
+}
+
+.btn {
+	border: 1px solid #696969;
+	color: white;
+	cursor: pointer;
+	text-transform: inherit;
+	-webkit-border-radius: 5px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#3e779d), to(#65a9d7)); 
+	vertical-align: middle;
+	margin-top: -2px;
+}
+
+.btn:hover {
+	border-top-color: #28597a;
+	background: #28597a;
+	color: white;
+}
+
+.btn:active {
+	border-top-color: #1b435e;
+	background: #1b435e;
+	color: white;
+}
+
+ a .btn {
+	color: white;
+}
+
+.password {
+	letter-spacing: 1px;
+}
+
+#navegador {
+	border: 1px solid #7babce;
+	background-color: #cfdaf0;
+	color: #335abb;
+	margin: 5px;
+	padding: 5px;
+}
+
+.contenedor {
+	margin: 5px;
+}
+
+/* Alerta */
+.exito, .alerta, .error {
+	font-family: Arial, Helvetica, sans-serif; 
+	font-size: 13px;
+	border: 1px solid;
+	margin: 10px 5px;
+	padding: 15px 10px 15px 50px;
+	background-repeat: no-repeat;
+	background-position: 10px center;
+}
+.exito {
+	color: #4F8A10;
+	background-color: #DFF2BF;
+	background-image: url('../images/exito.png');
+}
+.alerta {
+	color: #9F6000;
+	background-color: #FEEFB3;
+	background-image: url('../images/alerta.png');
+}
+.error {
+	color: #D8000C;
+	background-color: #FFBABA;
+	background-image: url('../images/error.png');
+}
+.no-alerta {
+	visibility: hidden;
+	margin: 10px;
+}
+
+/* Tablas */
+table {
+	margin: 5px;
+	border: 1px solid black;
+	width: 99.3%;
+}
+table {
+	margin: 5px;
+	border: 1px solid black;
+	width: 99.3%;
+}
+
+tr {
+	border-bottom: 1px solid black;
+}
+
+tr:hover {
+	background-color: #edeff4;
+}
+
+td {
+	border-right: 1px solid black;
+	padding: 5px 10px;
+}
+
+table tr .cb {
+	background-color: #427ca3;
+	color: white;
+}
+
+.super-tabla {
+	margin-top: -6px;
+}
+
+.super-tabla:hover {
+	background-color: #edeff4;
+}
+
+.inter-tabla {
+	background-color: white;
+	margin: 0px;
+}
+
+/* Ajax Autompletar */
+.ui-widget-content {
+	border: 3px double #696969;
+	border-top: 0px;
+	background-color: white;
+}
+
+.ui-widget-content a {
+	color: #696969;
+	cursor: pointer;
+	border: 1px solid white;
+}
+
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus {
+	background-color: #e0e4ee;
+	color: black;
+	border: 1px dashed #696969;
+}
+
+.ui-widget-content a:focus {
+	outline: none;
+}
+
+.ui-autocomplete {
+	position: absolute;
+}
+
+* html .ui-autocomplete {
+	width: 0px;
+}
+
+.ui-menu {
+	list-style: none;
+	padding: 3px;
+	margin: 1;
+	display: compact;
+	float: right;
+}
+
+.ui-menu .ui-menu-item a {
+	text-decoration: none;
+	display: block;
+	padding: .2em .4em;
+	zoom: 1;
+}
+
+/* Campos AJAX */
+.campo-ajax {
+	position: absolute;
+	visibility: hidden;
+	width: 0px;
+	height: 0px;
+}
+
+.ajax-list {
+	height: 18px;
+}
